@@ -3,7 +3,9 @@
   --default-font-family: "Poppins", sans-serif;
   --branding-color: #65558f;
   --primary-color: rgba(125, 27, 104, 0.1);
-  --secondary-color: #dae7e3;
+  --project-color: #dae7e3;
+  --about-color: #efefa6eb;
+  --contact-color: #f3deafeb;
 }
 
 body {
@@ -18,7 +20,7 @@ body {
   background: var(--primary-color);
   margin-top: 100px;
   margin-bottom: 50px;
-  padding: 100px 40px 250px;
+  padding: 100px 40px 150px;
 }
 
 h1 {
@@ -45,8 +47,8 @@ h2 {
 }
 
 p {
-  font-weight: 500;
-  text-align: center;
+  font-weight: 400;
+  text-align: justify;
   font-size: 25px;
 }
 
@@ -79,16 +81,53 @@ p {
 }
 
 .container-project {
-  background: var(--secondary-color);
-  padding: 100px 40px 250px;
+  background: var(--project-color);
+  padding: 100px 40px 150px 0;
   margin: 150px 60px 150px 0;
 }
 
 .project {
-  text-align: left;
+  text-align: right;
   border-bottom: 1px solid;
 }
 
 .project-name {
   text-align: center;
+}
+
+/* About Page */
+.about-me {
+  text-align: left;
+}
+
+.container-about {
+  background: var(--about-color);
+  padding: 100px 40px 400px 40px;
+  margin: 150px 650px 200px 0;
+}
+
+/* Contact Page */
+
+.container-contact {
+  background: var(--contact-color);
+  padding: 100px 0px 150px 40px;
+  margin: 150px 350px 150px 0;
+}
+
+.contact-me {
+  text-align: left;
+}
+
+.text-align {
+  text-align: center;
+}
+
+.email-link {
+  display: flex;
+  text-transform: none;
+  justify-content: center;
+}
+
+.line {
+  border-bottom: 1px solid;
 }
