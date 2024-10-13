@@ -13,6 +13,7 @@ body {
   font-family: var(--default-font-family);
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 /* Homepage */
@@ -30,15 +31,25 @@ h1 {
   font-size: 68px;
 }
 
-.portfolio {
-  text-align: right;
-}
-
 h2 {
   font-family: var(--heading-font-family);
   color: black;
   font-weight: bold;
   font-size: 38px;
+}
+
+.container,
+.container-project,
+.container-about,
+.container-contact {
+  max-width: 100vw;
+  overflow-x: hidden;
+  max-width: 100vw;
+  padding: 100px 5%;
+}
+
+.portfolio {
+  text-align: right;
 }
 
 .name {
@@ -82,8 +93,7 @@ p {
 
 .container-project {
   background: var(--project-color);
-  padding: 100px 40px 150px 0;
-  margin: 150px 60px 150px 0;
+  padding-bottom: 50px;
 }
 
 .project {
@@ -102,16 +112,12 @@ p {
 
 .container-about {
   background: var(--about-color);
-  padding: 100px 40px 400px 40px;
-  margin: 150px 650px 200px 0;
 }
 
 /* Contact Page */
 
 .container-contact {
   background: var(--contact-color);
-  padding: 100px 0px 150px 40px;
-  margin: 150px 350px 150px 0;
 }
 
 .contact-me {
@@ -130,4 +136,25 @@ p {
 
 .line {
   border-bottom: 1px solid;
+}
+
+img {
+  max-width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 48px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  .container-project,
+  .container-about,
+  .container-contact {
+    margin-top: 50px;
+    padding: 30px 5%;
+  }
 }
