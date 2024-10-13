@@ -138,6 +138,10 @@ p {
   border-bottom: 1px solid;
 }
 
+.lower-case {
+  text-transform: lowercase;
+}
+
 img {
   max-width: 100%;
 }
