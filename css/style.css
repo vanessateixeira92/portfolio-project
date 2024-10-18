@@ -34,6 +34,8 @@ p {
   font-weight: normal;
   line-height: 30px;
   font-size: 18px;
+  text-align: justify;
+  line-height: 2;
 }
 
 /* Homepage */
@@ -41,7 +43,6 @@ p {
 .header-homepage {
   background: var(--primary-color);
   text-align: right;
-  padding: 100px 40px 150px;
 }
 
 .header-homepage h2 {
@@ -53,10 +54,11 @@ p {
 .info {
   text-align: center;
   font-weight: bold;
+  font-size: 30px;
 }
 
 .homepage-section {
-  margin: 80px 100px 50px 100px;
+  margin: 50px 100px 50px 100px;
 }
 
 .button {
@@ -85,7 +87,6 @@ p {
 
 .header-project {
   background: var(--project-color);
-  padding: 100px 40px 150px;
 }
 
 .header-project h1 {
@@ -95,11 +96,7 @@ p {
 .section-project h2 {
   font-weight: bold;
   text-align: center;
-}
-
-.img-yoga,
-.img-yogurt {
-  padding-left: 0;
+  margin-top: 40px;
 }
 
 .img-weather {
@@ -110,12 +107,11 @@ p {
 
 .header-about {
   text-align: left;
-  padding: 100px 40px 150px;
   background: var(--about-color);
 }
 
 .about-section {
-  background: var(--about-color);
+  margin-top: 50px;
 }
 
 .about-section h1 {
@@ -128,15 +124,10 @@ p {
   font-size: 25px;
 }
 
-.photo {
-  padding-right: 0;
-}
-
 /* Contact Page */
 
 .header-contact {
   background: var(--contact-color);
-  padding: 100px 40px 150px;
 }
 
 .header-contact h1 {
@@ -182,12 +173,17 @@ img {
   }
 
   .container {
-    margin-top: 50px;
-    padding: 30px 5%;
+    margin-top: 0;
+    padding: 0 30px 5%;
     text-align: center;
   }
 
-  .photo {
-    padding-left: 0;
+  .section-project h2 {
+    margin-top: -40px;
+    padding-top: 0;
+  }
+
+  .button {
+    margin-bottom: 10px;
   }
 }
