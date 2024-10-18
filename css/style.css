@@ -3,6 +3,7 @@
   --default-font-family: "Poppins", sans-serif;
   --branding-color: #65558f;
   --primary-color: rgba(125, 27, 104, 0.1);
+  --secondary-color: #f9f7fe;
   --project-color: #dae7e3;
   --about-color: #efefa6eb;
   --contact-color: #f3deafeb;
@@ -32,8 +33,7 @@ body {
 
 p {
   font-weight: normal;
-  line-height: 30px;
-  font-size: 18px;
+  font-size: 16px;
   text-align: justify;
   line-height: 2;
 }
@@ -99,10 +99,6 @@ p {
   margin-top: 40px;
 }
 
-.img-weather {
-  padding-right: 0;
-}
-
 /* About Page */
 
 .header-about {
@@ -134,23 +130,40 @@ p {
   text-align: left;
 }
 
-.section-contact {
-  text-align: center;
-  padding: 50px;
-}
-
 /* components*/
 
+footer {
+  margin: 60px 0;
+}
 .container {
   background: var(--primary-color);
   margin-bottom: 50px;
   border-radius: 10px;
 }
 
-.email-link {
-  display: flex;
-  text-transform: none;
-  justify-content: center;
+.social-links a {
+  font-size: 18px;
+  color: var(--branding-color);
+  background: var(--secondary-color);
+  padding: 10px 14px;
+  border-radius: 50%;
+  margin: 0 20px;
+  transition: all 100ms ease-in-out;
+}
+
+.social-links a:hover {
+  background: var(--branding-color);
+  color: var(--secondary-color);
+}
+
+footer .email-link {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+
+footer .email-link:hover {
+  color: var(--branding-color);
 }
 
 .line {
